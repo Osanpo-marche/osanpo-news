@@ -28,6 +28,27 @@
 - `templates/`: HTMLや原稿の型
 - `organization/`: エージェント役割や作業管理
 
+## GitHub Pages バックナンバーの増やし方
+
+GitHub Pages は `main` ブランチの `docs/` フォルダを公開元にします。
+本番配信前のテスト号も、バックナンバー確認用として `docs/issues/` に置けます。
+
+号を増やすときは、次の形にそろえます。
+
+1. `output/YYYY-MM/YYYY-MM.html` をもとに `docs/issues/YYYY-MM.html` を作る
+2. その号で使う画像を `docs/assets/images/YYYY-MM/` に置く
+3. HTML内の画像パスを `../assets/images/YYYY-MM/画像ファイル名` に直す
+4. `docs/index.html` のバックナンバー一覧に `issues/YYYY-MM.html` へのリンクを追加する
+5. 変更後、ローカルで `docs/index.html` と各号のHTMLを開いて、リンクと画像表示を確認する
+
+例:
+
+```html
+<a class="issue-link" href="issues/2026-06.html">2026年6月号：号のタイトル</a>
+```
+
+テスト号は `docs/issues/test-issue.html`、画像は `docs/assets/images/test-issue/` に置きます。
+
 ## 写真のルール
 
 新聞で使う写真は、毎号1枚だけにします。
