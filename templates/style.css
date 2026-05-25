@@ -1,0 +1,20 @@
+/* LINE配信用HTMLを作るときの控えテンプレ。
+   公開用CSSは docs/style.css を使います。 */
+
+:root {
+  --paper: #fffdf7;
+  --ink: #25231e;
+  --muted: #6f6a5f;
+  --line: #d9d0bd;
+  --leaf: #49724a;
+  --accent: #b45f3a;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.7;
+}
+
