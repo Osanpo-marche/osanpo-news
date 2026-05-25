@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年6月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff3d6;
+      --ink: #2e2a22;
+      --muted: #736b5c;
+      --line: #d8c7a6;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e6dc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9dfca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 820px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1180px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: var(--leaf);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 25px;
+      color: var(--leaf);
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .theme-note {
+      margin-top: 16px;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(179, 95, 61, 0.28);
+      color: #743f2b;
+      font-weight: 700;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 12px;
+      }
+
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      .theme-note {
+        font-size: 16px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年6月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年6月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">野の社、はじまる</p>
+      </header>
+
+      <section class="section">
+        <h2>ピックアップ</h2>
+        <p>畑の片すみに、小さな鳥居を建てました。</p>
+        <p class="theme-note">もともと棗の木が倒れないように単管を立ててましたが、なんだか形が鳥居みたいだったので紅く塗っちゃった！ 皆には単管だろってバカにされてます（笑）</p>
+      </section>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">今月のピックアップ写真</p>
+          棗の木を支える単管から生まれた、小さな鳥居。
+        </figcaption>
+        <img src="../assets/images/2026-06/torii.jpg" alt="畑の片すみに立てた小さな鳥居">
+      </figure>
+
+      <section class="section">
+        <h2>おさんぽ便り</h2>
+        <p>ナフサ不足の影響で、農業資材や包装資材の値上がり、品不足など、いろいろなところに影響が出てきているそうです。</p>
+        <p>直売所でも無関係ではありませんが、もともとおさんぽマルシェは、あまり梱包をしません。お客様もエコバッグ持参の方が多く、採れた野菜をなるべくそのまま、気軽に持ち帰ってもらう形です。</p>
+        <p>包みすぎない。無理しすぎない。そんな小さなやり方が、今の時代にはちょっとした強みなのかもしれませんね。</p>
+      </section>
+
+      <p class="page-label">1 / 2</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年6月号 2枚目">
+      <section class="section">
+        <h2>季節のお野菜</h2>
+        <p>6月のおすすめは、新玉葱です。</p>
+        <p>みずみずしくて辛みがやわらかいので、薄く切ってそのまま食べても、味噌汁や炒めものに入れても使いやすい野菜です。</p>
+        <p>オラんち流なら、むずかしいことはせず、まずはざくっと切って焼く、汁物に入れる、サラダにする。食卓にひとつあるだけで、季節がふわっと出てくれます。</p>
+      </section>
+
+      <section class="section">
+        <h2>ジジババ・人情・裏話</h2>
+        <p>直売所を一緒にやっているネーサンが、お友達に「直売所のLINEすごいわね」と褒められて、とても喜んでいました。</p>
+        <p>野菜のこと、直売所のこと、雨でお休みになること。小さなお知らせでも、見てくれている人がいると思うと、続ける力になります。</p>
+        <p>直売所は、野菜を並べる場所でありながら、人の声が行ったり来たりする場所でもありますね。</p>
+      </section>
+
+      <section class="section">
+        <h2>お知らせ</h2>
+        <p class="notice">6月7日（日曜日）から、直売所がはじまります。</p>
+        <p>雨天の場合は中止です。当日の様子や変更があるときは、LINEでもお知らせします。</p>
+      </section>
+
+      <p class="page-label">2 / 2</p>
+    </article>
+  </main>
+</body>
+</html>
