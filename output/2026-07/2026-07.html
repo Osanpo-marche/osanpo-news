@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年7月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff3d6;
+      --ink: #2e2a22;
+      --muted: #736b5c;
+      --line: #d8c7a6;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e6dc;
+      --violet: #6d4b78;
+      --violet-soft: #f0e8f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9dfca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 820px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1180px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: var(--leaf);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 25px;
+      color: var(--leaf);
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .theme-note {
+      margin-top: 16px;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+    }
+
+    .photo-block.tall img {
+      max-height: 520px;
+      object-position: center 46%;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .quote {
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: var(--violet-soft);
+      border-left: 5px solid var(--violet);
+      color: #3d3142;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(179, 95, 61, 0.28);
+      color: #743f2b;
+      font-weight: 700;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 12px;
+      }
+
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      .theme-note {
+        font-size: 16px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年7月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">半年ぶりの直売所</p>
+        <p class="intro">棚に野菜が並ぶと、やっぱり空気が変わります。</p>
+      </header>
+
+      <section class="section">
+        <h2>ピックアップ</h2>
+        <p>6月に入り、約半年ぶりに直売所がようやくスタートできました。</p>
+        <p>こんな辺鄙な直売所でも、毎回新しい出逢いがあったりして、棚に野菜が並ぶと、やっぱり空気が変わります！</p>
+        <p class="theme-note">キャベツ、大根、玉ねぎ、じゃがいも etc... ひとつひとつはいつもの野菜でも、久しぶりに並ぶ姿を見ると「また始まったなあ」と感じます。</p>
+      </section>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">今月のピックアップ写真</p>
+          半年ぶりに直売所へ野菜が並んだ様子。
+        </figcaption>
+        <img src="../../input/images/pickup.jpg" alt="直売所の棚に並んだ季節の野菜">
+      </figure>
+
+      <section class="section">
+        <h2>おさんぽ便り</h2>
+        <p>半年もお休みだったのは、季節に沿った露地栽培では、どうしたって作物が育たない時期があるからです。一年中、いろいろな野菜が買えるスーパーや、生産者さんの努力って本当にすごいんです。</p>
+        <p>現代はハウス栽培や輸入のおかげで、いつでも買えるお野菜が流通しているわけですが、さて、そんな時代はいつまで続くでしょうかね？</p>
+        <p>直売所では、季節の流れに合わせて、無理なく並べられるものを届けていきたいと思います。</p>
+      </section>
+
+      <p class="page-label">1 / 3</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 2枚目">
+      <section class="section">
+        <h2>季節のお野菜</h2>
+        <p>6月〜7月の気になる野菜は、ズッキーニ。</p>
+        <p class="theme-note">おさんぽマルシェでは、スーパーでは売られていないズッキーニや、固定種の種から育てた珍しい品種も並びます。</p>
+      </section>
+
+      <section class="section">
+        <h2>ジジババ・人情・裏話</h2>
+        <p>畑作業をしながら、昭和の時代を走ってきた先輩方から、最近はこんな話をよく聞きます。</p>
+        <p class="quote">「同級生が段々亡くなって、寂しいなあ」</p>
+        <p>胸にくる話だすなあ。こればっかりは避けられないことですけどさー、直売所の野菜を安く提供できるのも、こうしたレジェンド達の善意に支えられているからなんです。</p>
+        <p>畑を守ること。野菜を作ること。それを誰かに分けること。どれも当たり前のように見えて、長く続けてきた人たちの力があってこそです。</p>
+        <p>直売所の棚には、野菜だけでなく、そういう時間も一緒に並んでいるのかもしれませんだな。</p>
+      </section>
+
+      <section class="section">
+        <h2>お知らせ&お願い</h2>
+        <p class="notice">毎週日曜日、朝7時ごろから直売所を開いています。</p>
+        <p>雨天の場合は中止です。今月もよろしくお願いいたします。</p>
+        <p>よかったら、Google Map に口コミを書いてもらえると助かるだよ。わかりづらい直売所に案内が届きやすいんだって！</p>
+        <p>めんどくせーから、気が向いたらで大丈夫です。</p>
+        <p><a href="https://g.page/r/CTZY3haPk24QEBM/review">Google Map に口コミを書く</a></p>
+      </section>
+
+      <p class="page-label">2 / 3</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 3枚目">
+      <section class="section">
+        <h2>開墾からはじまる野食育</h2>
+        <h3>第1回「すべてはヤカン1つから始まった」</h3>
+        <p>荒れ地から直売所へ、紡ぐ生きた知恵の記憶。</p>
+        <p>今でこそ直売所なんかやらせてもらっていますが、オラのところは、最初はただの葦（ヨシ）がボーボーの荒れ地でした。開墾からはじめて、気づけば10年があっという間に経ちました。</p>
+      </section>
+
+      <figure class="photo-block tall">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          最初に持ち込んだ、カセットコンロとヤカン。
+        </figcaption>
+        <img src="../../input/images/yashokuiku-01-yakan.JPG" alt="開墾初期の畑でカセットコンロとヤカンを置いた記録写真">
+      </figure>
+
+      <section class="section">
+        <p>お茶を沸かして一息つきながら、「本当にここが畑になるんか？」と途方に暮れていた日の写真だ。</p>
+        <p>オラもやってみて思うようになったが、食べ物が育つ場所は最初から畑だったわけではありません。ここから野生を少しずつ分けてもらう闘いが始まりました。</p>
+        <p>この連載では、教科書通りのきれいな食育ではなく、自然のまま、人間の暮らしのまま、泥臭くたくましく生きる「現場（野）」の知恵を届けていきます。</p>
+        <p class="theme-note">お爺さんの経験、ネ〜さんの生活力、オラの実験。みんな違って、みんなたくましい。野菜の向こう側にあるドラマも、少しずつお届けしていきたいなと思ってます。</p>
+      </section>
+
+      <p class="page-label">3 / 3</p>
+    </article>
+  </main>
+</body>
+</html>
