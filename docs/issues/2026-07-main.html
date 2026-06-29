@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年7月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff3d6;
+      --ink: #2e2a22;
+      --muted: #736b5c;
+      --line: #d8c7a6;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e6dc;
+      --violet: #6d4b78;
+      --violet-soft: #f0e8f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #e9dfca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 820px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1180px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: var(--leaf);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      font-size: 25px;
+      color: var(--leaf);
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex: 0 0 auto;
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    a {
+      color: var(--leaf);
+      font-weight: 700;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .theme-note {
+      margin-top: 16px;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+    }
+
+    .photo-block.contain img {
+      max-height: 640px;
+      object-fit: contain;
+      background: var(--paper-strong);
+    }
+
+    .photo-block.tall img {
+      max-height: 520px;
+      object-position: center 46%;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .quote {
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: var(--violet-soft);
+      border-left: 5px solid var(--violet);
+      color: #3d3142;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(179, 95, 61, 0.28);
+      color: #743f2b;
+      font-weight: 700;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        padding: 12px;
+      }
+
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+
+      h1 {
+        font-size: 31px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      .theme-note {
+        font-size: 16px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年7月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">値段が昭和な直売所</p>
+        <p class="intro">畑と食卓が近いからできる価格！　身近な直売所の価値を少しだけ知ってもらえたら嬉しいだよ。</p>
+      </header>
+
+      <section class="section">
+        <h2>ピックアップ</h2>
+        <h3>昭和の価値観はどこまで続くか？</h3>
+        <p>いつも辺鄙な直売所に来ていただきありがとうございます。</p>
+        <p>最近の物価高、日本の円安もあり、食品も野菜も、資材も・・・</p>
+        <p>なにからなにまで、高くなるのが当たり前の時代になってきました。</p>
+        <p>昭和の時代から、スーパーやコンビニができはじめ</p>
+        <p>綺麗に並んだ野菜がいつでも買えるのが当たり前になってきた昨今ですが</p>
+        <p>その便利さの中で、野菜がどこでどう育ち収穫されて、運んできてくれたものか？</p>
+        <p>そういう食べ物の背景は、少しずつ、そして確実に見えにくくなってきてもいます。</p>
+        <p>おさんぽマルシェの野菜は、朝採れたばかりの無農薬栽培。</p>
+        <p>畑から直売所まで運ぶのも、ほんのすぐそこです。</p>
+        <p class="theme-note">それでも、スーパーより安い価格で並んでいる野菜もあります。</p>
+      </section>
+
+      <figure class="photo-block contain">
+        <figcaption class="caption">
+          <p class="photo-title">今月のピックアップ写真</p>
+          天狗茄子が20cm 超えてきました。
+        </figcaption>
+        <img src="../assets/images/2026-07/pickup.jpg" alt="20cmを超えて育ってきた天狗茄子">
+      </figure>
+
+      <p class="page-label">1 / 6</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 2枚目">
+      <section class="section">
+        <h2>ピックアップ 続き</h2>
+        <p>なぜ、そんな値段で出しているのか？</p>
+        <p>わざわざ足を運んできてくれた方に、ありがとうの気持ち。</p>
+        <p>畑と食卓が近いからできる価格と価値を、ライブで感じて貰えたら幸いだからです。</p>
+        <p>オラは、安売り競争をしたい派では決してありません。</p>
+        <p>「安いから得した」で終わってほしいからでもありません。</p>
+        <p>年金暮らしのおじいちゃん、おばあちゃんにも、ちゃんとした野菜を食べてほしい。</p>
+        <p>成長中の子どもたちにも安全な食材、子育て中のパパ・ママにも</p>
+        <p>わざわざ通って頂いている方にも、地産地消で野菜の背景を知ってほしい。</p>
+        <p>食卓に、少しでも体にやさしいものがあったら良い。</p>
+        <p>そんな気持ちがあります。</p>
+        <p>野菜を育てるのは、簡単なようで簡単でもありません。</p>
+        <p>そこには、作り手の手間、手伝ってくれる人たちの善意、お天気事情・・・</p>
+        <p>そして、まだまだ元気に輝いていてほしいジジババたちの力もあります。</p>
+        <p>昔の商いには、もう少し近さがありました。</p>
+        <p>作る人の顔が見えて、買う人の顔も見えて、季節があって、人情があって</p>
+        <p class="quote">「これ美味しかったよ」... などのキャッチボールが！</p>
+        <p>おさんぽマルシェの昭和みたいな値段には、そんな気持ちも少し入っています。</p>
+        <p>ただ、正直に言えば、こういう直売所も当たり前にずっと続くものではありません。</p>
+        <p>畑をやる人がいなくなれば、THE END。</p>
+        <p>直売所に立つ人もいなくなれば、終わります。</p>
+        <p>だからこそ、安い野菜の向こう側にある手間や思いを、少しだけ知ってもらえたら嬉しいのです。</p>
+        <p>食べることは、体をつくること。</p>
+        <p>「医食同源」という言葉のように、毎日の食卓は、毎日の元気につながっています。</p>
+        <p class="theme-note">値段は昭和。でも、届けたい価値は、これからの時代にこそ大切になるものです。</p>
+        <p>畑と食卓が近いこと。</p>
+        <p>作る人の顔が見えること。</p>
+        <p>安心して食べられるものを、無理なく選べること。</p>
+        <p>おさんぽマルシェは、そんな小さな価値を残していきたい直売所です。</p>
+      </section>
+
+      <p class="page-label">2 / 6</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 3枚目">
+      <section class="section">
+        <h2>季節のお野菜</h2>
+        <p>これからは、キュウリ・トマト・茄子などの夏野菜まっさかりシーズン！</p>
+        <p>今回は、愛知県の奥三河地方で栽培されている希少な伝統野菜「天狗茄子」。</p>
+        <p>一般的なナスの3〜10倍（400g〜1kg）にもなる巨大サイズと、天狗の鼻のような突起ができることが特徴で加熱するとトロトロになる食感から「ナスのフォアグラ」とも称されているそうです。</p>
+        <p>詳しい情報はこちら</p>
+        <p><a href="https://tradveggie.or.jp/traditional-vegetables-news/tengu-nasu-buying-guide/">伝統野菜ニュース「天狗ナスの購入ガイド」</a></p>
+        <p>おさんぽマルシェでは今年はじめて栽培してみました。</p>
+        <p>おすすめの食べ方を載せておきます。</p>
+        <p><a href="https://dg.chunichi.co.jp/fukaboritokai/life/6095/">中日新聞 深掘り東海「天狗ナス」</a></p>
+        <p>土地に残ってきた野菜には、味だけではない物語があります。</p>
+        <p>そういうものも、少しずつ直売所の話題にしていけたらと思っています。</p>
+      </section>
+
+      <section class="section">
+        <h2>話題</h2>
+        <h3>インナーガーデンって知ってますか？</h3>
+        <p>ラジオから、インナーガーデンってワードが聞こえてきただ。</p>
+        <p>明治が進めているプロジェクトで、ひとりひとり違った腸内細菌を調べそれを活かした腸活をしようという話だった。</p>
+        <p><a href="https://floracheck.meiji.co.jp/?gad_source=1&amp;gad_campaignid=22008521994&amp;gbraid=0AAAAA-YUq1rTtIKyqOf7t6DhCVncFbGAr">明治　インナーガーデン</a></p>
+        <p>それを聞いていて、オラは少し考えました。</p>
+        <p>そもそも、現代人の食生活・・・人によっては良い腸内細菌がいない場合もあるだろうし</p>
+        <p>そんな時はどうするんだろう？</p>
+        <p>サプリや検査も、これからの時代は大事な選択肢なのかもしれません。</p>
+        <p>でも、体の中だけを見ていても、暮らし全体は見えにくい。</p>
+      </section>
+
+      <p class="page-label">3 / 6</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 4枚目">
+      <section class="section">
+        <h2>インナーガーデン 続き</h2>
+        <p>おさんぽマルシェの無農薬野菜は、ついさっきまで畑にいました。</p>
+        <p>土があり、水があり、空気があり、目には見えない小さな命（微生物）が、たくさんいる場所で育っています。</p>
+        <p>もちろん、土を食べればいいという話ではありませんがそういう畑から来た野菜を日々の食卓に取り入れることは、体の内側の庭を育てることにもつながっていくと思います。</p>
+        <p class="theme-note">食べるものを選びながら、自分の内側の庭（腸内環境）を少しずつ耕していく事。それが、本当の意味でのインナーガーデンなんじゃないのかって思っただよ。</p>
+        <p>昔から「身土不二」という言葉があり体と土地は、切り離せないという考え方です。</p>
+        <p>遠くの正解を探すことも大事。</p>
+        <p>でも、自分の暮らしている土地で育ったものを食べること。</p>
+        <p>旬のものを食べること。</p>
+        <p>食材と体を、あまり遠くに離さないこと。</p>
+        <p>外の畑を大事にすることは、自分の腸内も耕し、内側の庭を大事にすることでもあるのかもしれません。</p>
+      </section>
+
+      <p class="page-label">4 / 6</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 5枚目">
+      <section class="section">
+        <h2>開墾からはじまる野食育</h2>
+        <p>荒れ地から直売所へ、紡ぐ生きた知恵の記憶。</p>
+        <h3>第2回「地層（アシの根）との真っ向勝負」</h3>
+        <p>畑をやるってことは、上の草をむしるだけではありませんでした（涙</p>
+        <p>開墾当初は何年も眠っていたアシの根っこが、地下でガチガチにスクラムを組んでいました。</p>
+        <p>それをスコップで90センチ近く深く掘って、地層ごとひっくり返していった時の写真。</p>
+        <p>当時は発掘調査でも始まったのか？と周囲からは思われていたようです（笑</p>
+      </section>
+
+      <figure class="photo-block tall">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          地層ごとひっくり返して、アシの根と向き合った記録。
+        </figcaption>
+        <img src="../assets/images/2026-07/yashokuiku-02-ashi-root.jpg" alt="掘り返した土とアシの根が見える開墾作業の記録写真">
+      </figure>
+
+      <section class="section">
+        <p>身体中バキバキでしたが</p>
+        <p>このゴツゴツした土の塊を見たとき、</p>
+        <p class="quote">「土地を叩き起こしてるな」</p>
+        <p>って、野生のパワーを実感しただな。</p>
+        <p>この連載では、教科書通りのきれいな食育ではなく、自然のまま、人間の暮らしのまま、泥臭くたくましく生きる「現場（野）」の知恵を届けていきます。</p>
+        <p>お爺さんの経験、ネ〜さんの生活力、オラの実験。</p>
+        <p>みんな違って、みんなたくましい。</p>
+        <p class="theme-note">野菜の向こう側にあるドラマも、少しずつお届けしていきます。</p>
+      </section>
+
+      <p class="page-label">5 / 6</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年7月号 6枚目">
+      <section class="section">
+        <h2>お知らせ</h2>
+        <p>毎週日曜日、朝7時ごろから直売所を開いています。</p>
+        <p>雨天の場合は中止です。</p>
+        <p>場所が少しわかりづらい直売所なので、Google Map に口コミを書いてもらえると助かります。</p>
+        <p>気が向いたらで大丈夫です。</p>
+        <p><a href="https://g.page/r/CTZY3haPk24QEBM/review">https://g.page/r/CTZY3haPk24QEBM/review</a></p>
+        <p>今月もよろしくお願いいたします。</p>
+      </section>
+
+      <section class="section">
+        <h2>参考</h2>
+        <p><a href="https://tradveggie.or.jp/traditional-vegetables-news/tengu-nasu-buying-guide/">伝統野菜ニュース「天狗ナスの購入ガイド」</a></p>
+        <p><a href="https://dg.chunichi.co.jp/fukaboritokai/life/6095/">中日新聞 深掘り東海「天狗ナス」</a></p>
+        <p><a href="https://floracheck.meiji.co.jp/?gad_source=1&amp;gad_campaignid=22008521994&amp;gbraid=0AAAAA-YUq1rTtIKyqOf7t6DhCVncFbGAr">明治 インナーガーデン</a></p>
+      </section>
+
+      <p class="page-label">6 / 6</p>
+    </article>
+  </main>
+</body>
+</html>
