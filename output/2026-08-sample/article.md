@@ -127,5 +127,4 @@ https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html
 
 - オムロン「SINIC理論」 https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html
 - 農林水産省「お米と環境」 https://www.maff.go.jp/j/syouan/keikaku/soukatu/okome_majime/content/environment.html
-- Paris, H. S. "Origin and emergence of the sweet dessert watermelon, Citrullus lanatus" https://pmc.ncbi.nlm.nih.gov/articles/PMC4512189/
 - わかる人だけの参考 https://music.youtube.com/watch?v=T-jFc-fnc80&list=RDCLAK5uy_kTwZ5NfIyBzzjFuqiTyoKpigkqgPsxr74
