@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年8月号 サンプル</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff1d4;
+      --ink: #2d2922;
+      --muted: #746b5c;
+      --line: #d8c5a2;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e4d8;
+      --soil: #6f5138;
+      --soil-soft: #f0e6da;
+      --violet: #6c4a77;
+      --violet-soft: #f0e8f3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8deca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 840px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1160px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      color: var(--leaf);
+      font-size: 42px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--leaf);
+      font-size: 25px;
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    a {
+      color: var(--leaf);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child { border-bottom: 0; }
+
+    .theme-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .quote {
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: var(--violet-soft);
+      border-left: 5px solid var(--violet);
+      color: #3d3142;
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .soil-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--soil-soft);
+      border-left: 5px solid var(--soil);
+      color: #4a3526;
+      font-weight: 700;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+    }
+
+    .photo-block.contain img {
+      max-height: 640px;
+      object-fit: contain;
+      background: var(--paper-strong);
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { padding: 12px; }
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+      h1 { font-size: 31px; }
+      h2 { font-size: 22px; }
+      p, .theme-note, .soil-note { font-size: 16px; }
+      .lead { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年8月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年8月号 サンプル</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">野菜の値段って形や鮮度だけでなく、「どこから来たのか」も大切になるかもしれない話。</p>
+      </header>
+
+      <figure class="photo-block contain">
+        <figcaption class="caption">
+          未来の野菜は、遠くから来るとは限らない
+        </figcaption>
+        <img src="../../input/images/pickup.jpg" alt="空を飛ぶ飛行機を丸で囲み、ひこうきと書き添えた写真">
+      </figure>
+
+      <section class="section">
+        <h2>ピックアップ</h2>
+        <h3>野菜の値段って形や鮮度だけでなく、「どこから来たのか」も大切になるかもしれない話</h3>
+        <p>これから少し先の未来、野菜の見方が少し変わるかもしれません。</p>
+        <p>今までは、野菜を見るときにまず気にするのは、値段、形、大きさ、鮮度。</p>
+        <p>でもこれからは、もうひとつの見方が少しずつ広がっていくかもしれないという話です。</p>
+        <p class="theme-note">それは、「この野菜は、どこから来たのか？」という見方です。</p>
+        <p>食べ物がどれだけ遠くから運ばれてきたかを見る考え方に、「フードマイレージ」という言葉があります。</p>
+        <p>遠くから運ぶほど、トラック、船、飛行機などの燃料を使います。</p>
+        <p>値札には書いていなくても、食品には、国内・国外からの「旅の長さ」もあります。</p>
+        <p>これからの日本。はたして、「もっと大量に、もっと遠くから、もっと便利に」なっていくのでしょうか？</p>
+      </section>
+
+      <p class="page-label">1 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年8月号 2枚目">
+      <section class="section">
+        <h2>ピックアップ 続き</h2>
+        <p>オムロンという日本の会社には、「SINIC理論」という未来予測モデルがあります。</p>
+        <p>そこでは、これからの社会は、ただ物がたくさんある豊かさだけではなく、心の豊かさ、自然との調和、持続できる暮らしへ向かっていくと考えられています。</p>
+        <p>この未来予測の何が凄いのかというと、1970年というインターネットもPCも存在しない高度経済成長期の時点で定義されたタイムラインが、現在の社会構造の変化とここまで一致してきていたという事実。</p>
+        <p>そしてこの予測は、2025年からは「自律社会」へ移行するための大転換の時代とされています。</p>
+        <p>自律社会ってなんだ？って思った方は</p>
+        <p>オムロンさんのホームページをみてみてね！</p>
+        <p><a href="https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html">https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html</a></p>
+        <p class="soil-note">重要なポイントは、「もっと大量に、もっと遠くから、もっと便利に」だけではなくなるという未来予測。</p>
+        <p>輸送コストの暴騰・円安・人材不足などもあいまって、日本のインフラの限界も課題です。</p>
+        <p>そして今後は「心の豊かさ」「持続可能性」「自然との調和」が重視される社会へ向かう、と予測されています。</p>
+      </section>
+
+      <p class="page-label">2 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年8月号 3枚目">
+      <section class="section">
+        <h2>ピックアップ まとめ</h2>
+        <p>もし本当にそういう時代へ向かうなら、畑のすぐそばで採れた野菜の価値は、今よりもっと見直されるかもしれません。</p>
+        <p>朝採って、すぐ並ぶ。</p>
+        <p>遠くから運ばれてこない。</p>
+        <p>作った人の顔が見える。</p>
+        <p>天気や季節の都合も、そのまま出る。</p>
+        <p>おさんぽマルシェの野菜は、大きな流通には乗りません。</p>
+        <p>でも、歩いて来られる場所で、近くの畑の野菜を手に取ってもらうことはできます。</p>
+        <p class="theme-note">未来の野菜は、遠くから来るとは限りません。案外、いつもの散歩道のすぐ横で、もう育っているのかもしれません。</p>
+      </section>
+
+      <section class="section">
+        <h2>ジジババ・人情・裏話</h2>
+        <p>畑作業をしていると、地面ばっかりをみる事が多く<br>たまに空を見上げたくなるときがあります。</p>
+        <p>そんで、休憩がてらレジェンド世代（80 over世代）の「通称：おいちゃん」と空を見上げていました。</p>
+        <p>オラにとって、80 over世代は、ただの年齢の区切りではありません。</p>
+        <p>本物のレジェンド世代。</p>
+        <p>日本の戦後の貧しさの影響を、いちばん強く受けてきた世代だと思うからです。</p>
+        <p>そんで、そんなオイちゃんが空を飛んでいる飛行機をみて</p>
+        <p>何て言ったかと言うと</p>
+        <p class="soil-note">「いつか落ちねーかな（墜落）」と思ってみているだって言っただ。</p>
+        <p>オラは、歳とるとこんな風に考えるようになんのかって思っただよ。（笑</p>
+        <p>そういえば、もう何年も飛行機のってないなー</p>
+      </section>
+
+      <p class="page-label">3 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年8月号 4枚目">
+      <section class="section">
+        <h2>季節のお野菜</h2>
+        <h3>スイカ</h3>
+        <p>スイカの原産地って、熱帯アフリカ（南アフリカのカラハリ砂漠やその周辺のサバンナ地帯）です。</p>
+        <p>乾燥地帯で育つ野生種がルーツなんだけどさ</p>
+        <p class="theme-note">日本でも夏に水分補給ができるってのはありがてーだよな！</p>
+      </section>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">季節のお野菜写真</p>
+          畑で育っているスイカ。夏の水分補給が、つるの先にぶら下がっています。
+        </figcaption>
+        <img src="../../input/images/seasonal-watermelon.jpg" alt="畑でつるからぶら下がって育っているスイカ">
+      </figure>
+
+      <section class="section">
+        <h2>開墾からはじまる野食育</h2>
+        <p>荒れ地から直売所へ、紡ぐ生きた知恵の記憶。</p>
+        <h3>第3回「ボロ小屋作って、土の宝山」</h3>
+        <p>コツコツ掘り進めて、道具を置く小さなボロ小屋ができた頃の写真です。</p>
+        <p>掘り起こした土が山みたいになっている。</p>
+        <p>この土の中に、何億もの微生物や、これから野菜を育てるための野生のエネルギーがギュッと詰まっていたんだな。</p>
+      </section>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          ボロ小屋を建てていた頃。道具置き場と、掘り起こした土の山。
+        </figcaption>
+        <img src="../../input/images/yashokuiku-04-une-yugure-b.JPG" alt="ボロ小屋を建てていた頃の畑と、掘り起こした土の山が見える記録写真">
+      </figure>
+
+      <section class="section">
+        <p>ただの泥の山が、宝の山のようにも見えたし、これからどうしていけば良いのか？</p>
+        <p>困ったのを覚えている。</p>
+        <p>答えは後からついてくる。</p>
+        <p class="soil-note">無知だったからこそ、ひたすら前進あるのみ！</p>
+        <p>自分はそうだし、尊敬するジジババの話を聞いても、たぶんそんな感じなんだよな・・・</p>
+        <p>教科書通りのきれいな食育ではなく、自然のまま、人間の生活のまま、泥臭くたくましく生きる現場の知恵。</p>
+        <p>それが、オラが届けたい「野食育」です。</p>
+        <p>うまく説明できない納得が、土の山の中にも、野菜の向こう側にも、たしかにある気がします。</p>
+        <p class="quote">だってナンダカ、だってダッテなんだモン。</p>
+      </section>
+
+      <p class="page-label">4 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年8月号 5枚目">
+      <section class="section">
+        <h2>参考</h2>
+        <p><a href="https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html">オムロン「SINIC理論」</a></p>
+        <p><a href="https://music.youtube.com/watch?v=T-jFc-fnc80&amp;list=RDCLAK5uy_kTwZ5NfIyBzzjFuqiTyoKpigkqgPsxr74">わかる人だけの参考</a></p>
+      </section>
+
+      <p class="page-label">5 / 5</p>
+    </article>
+  </main>
+</body>
+</html>
