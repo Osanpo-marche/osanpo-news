@@ -125,6 +125,20 @@ https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html
 
 だってナンダカ、だってダッテなんだモン。
 
+## お知らせ
+
+毎週日曜日、朝7時ごろから直売所を開いています。
+
+雨天の場合は中止です。
+
+場所が少しわかりづらい直売所なので、Google Map に口コミを書いてもらえると助かります。
+
+気が向いたらで大丈夫です。
+
+https://g.page/r/CTZY3haPk24QEBM/review
+
+今月もよろしくお願いいたします。
+
 ## 参考
 
 - オムロン「SINIC理論」 https://www.omron.com/jp/ja/about/corporate/vision/sinic/theory.html
