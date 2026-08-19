@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年9月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff2d8;
+      --ink: #2d2922;
+      --muted: #746b5c;
+      --line: #d8c5a2;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e4d8;
+      --soil: #6f5138;
+      --soil-soft: #f0e6da;
+      --river: #446f86;
+      --river-soft: #e5eff3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8deca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 840px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1160px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      color: var(--leaf);
+      font-size: 41px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--leaf);
+      font-size: 25px;
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child { border-bottom: 0; }
+
+    .theme-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .soil-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--soil-soft);
+      border-left: 5px solid var(--soil);
+      color: #4a3526;
+      font-weight: 700;
+    }
+
+    .river-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--river-soft);
+      border-left: 5px solid var(--river);
+      color: #314957;
+      font-weight: 700;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      object-position: center 58%;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { padding: 12px; }
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+      h1 { font-size: 31px; }
+      h2 { font-size: 22px; }
+      p, .theme-note, .soil-note, .river-note { font-size: 16px; }
+      .lead { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年9月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年9月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">旬レスの時代に、季節を感じる畑へ</p>
+      </header>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">今月のピックアップ写真</p>
+          何度も直売所に通ってくれているお客さんの言葉から。
+        </figcaption>
+        <img src="../assets/images/2026-09/pickup.png" alt="和紙調の背景に大きく旬、小さくれすと書かれ、周囲に野菜が淡く描かれたピックアップ画像">
+      </figure>
+
+      <section class="section">
+        <h2>おさんぽ便り</h2>
+        <p>7月のマルシェで、何度も直売所に通ってくれているお客さんから、こんなことを言われました。</p>
+        <p class="soil-note">「ここに来ると、旬のものを知れるのがいいですよね」</p>
+        <p>その言葉を聞いて、少しうれしくなりました。</p>
+        <p>オラ自身、畑を始めるまで、野菜の旬なんてほとんど意識していませんでした。だってスーパーへ行けば、一年中いろいろな野菜が並んでいたし。</p>
+        <p>栽培するようになって、その野菜が本来いつ育ち、いつ食べるものなのかを知っていく事になります。</p>
+        <p>今では当たり前になっていますが、それまでのオラは、いわば「旬レス」だったんですナ。</p>
+        <p>そして、栽培を始めるにあたって、まず自分が何も知らないなと思ったのが、正に野菜の「旬」でした。</p>
+        <p class="theme-note">だから、お客さんからそんな言葉をいただけたのは、すごくうれしかった。</p>
+      </section>
+
+      <section class="section">
+        <h2>畑の景色が並ぶ</h2>
+        <p>便利さのおかげで、冬にも夏野菜が買える。遠くの産地から運ばれてきて、季節をまたいで食べることもできる。それは本当にありがたいことです。</p>
+        <p>でも、露地栽培の畑では、野菜は人間の都合どおりには並べられません。</p>
+        <p>採れる時には、たくさん採れる。終わる時には、すっと終わる。そして季節が進むと、また別の野菜が顔を出す。</p>
+        <p class="river-note">直売所に並んでいるのは、その時の畑の景色です。</p>
+        <p>今日は何があるかな。先週あった野菜が、もう終わっているな。あ、新しい季節が来たんだな。</p>
+        <p>そんなふうに感じてもらえる場所であれたら、なんか素敵だなと思っただ。</p>
+      </section>
+
+      <p class="page-label">1 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年9月号 2枚目">
+      <section class="section">
+        <h2>旬には、始まりと終わりがある</h2>
+        <p>今回、あらためて「旬」という言葉を調べてみました。</p>
+        <p>旬というと、いちばん味が良く、たくさん採れる時期だけを指すように思っていました。でも、日本の食文化では、旬の移り変わりを「走り・盛り・名残」という三つの時期で味わう考え方があります。</p>
+        <p class="theme-note">出始めの初物を楽しむ「走り」。<br>味も収穫量も充実する「盛り」。<br>そして、もうすぐ終わる季節を惜しみながら味わう「名残」。</p>
+        <p>ある意味、人間の一生にも喩えれますけれど、旬とは、いちばんおいしい一点だけではなく、野菜が現れ、満ちて、やがて姿を消していく時間そのものなのかもしれません。</p>
+      </section>
+
+      <section class="section">
+        <h2>その時の持ち味</h2>
+        <p>この考え方をたどっていくと、北大路魯山人の食の世界にもつながりました。</p>
+        <p>魯山人は、食材はただ新鮮ならよいというだけではなく、出始めなのか、出盛りなのか、その時々の持ち味を細かく見ていました。</p>
+        <p>もちろん、オラは魯山人のような美食家ではありません。</p>
+        <p class="soil-note">いつも鍋を空焚きして食材を無駄にしたり、火事になりそうになったりしているので、本当なら全部生で食べたほうが安全なくらいです。</p>
+        <p>それでも最近、調理とは、食材をただ食べられるようにすることではなく、その時の持ち味を、もっとおいしく食べるための方法なんだと気づきました。</p>
+        <p>ただ、畑で野菜を作り、採れ始めから終わりまでを見ていると、食べ物の味は季節の流れと切り離せないものなんだと、少しずつ分かってきます。</p>
+        <p>たくさん採れ始めた時の勢いも、最後の一本を収穫する寂しさも、露地の畑だから感じられる旬の一部です。</p>
+      </section>
+
+      <section class="section">
+        <h2>季節を思い出す小さな場所</h2>
+        <p>おさんぽマルシェは、旬レスの時代に、畑から季節を思い出す小さな場所でありたいです。</p>
+        <p>旬を知るというのは、野菜の名前や収穫時期を覚えることだけではありません。</p>
+        <p class="river-note">「今年も始まったな」<br>「今がいちばん採れる時だな」<br>「もうすぐ終わりなんだな」</p>
+        <p>そんな季節の始まりと盛りと名残を、野菜を通して感じることなのだと思います。</p>
+      </section>
+
+      <p class="page-label">2 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年9月号 3枚目">
+      <header class="masthead">
+        <p class="eyebrow">季節のお野菜</p>
+        <h1>ピントンロング</h1>
+        <p class="lead">台湾で親しまれてきた長ナス系の固定種</p>
+        <p class="intro">細長い実と明るい紫色が美しい、見た目にも味にも個性のあるナスです。</p>
+      </header>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">季節のお野菜写真</p>
+          畑で育っているピントンロング。葉の奥から、細長い紫色の実が顔を出しています。
+        </figcaption>
+        <img src="../assets/images/2026-09/pintonlong.jpg" alt="畑で育っているピントンロング。細長い紫色のナスが葉の間から見えている">
+      </figure>
+
+      <section class="section">
+        <h2>台湾系の長ナス</h2>
+        <p>ピントンロングは、台湾系の長ナスとして知られる固定種の品種です。</p>
+        <p>名前の「Ping Tung」は、台湾南部の屏東（ピントン）に由来するとされ、温暖な気候の中で育てられてきたナスです。</p>
+        <p>細長く伸びる実と、明るい紫色の美しい果皮が特徴で、日本の一般的なナスよりもすらりとした姿をしています。</p>
+      </section>
+
+      <section class="section">
+        <h2>火を入れると、とろっと</h2>
+        <p>果肉はやわらかく、皮も薄めで、火の通りがよいのが魅力です。</p>
+        <p>加熱するととろっとした食感になり、ナスらしい甘みとみずみずしさが引き立ちます。</p>
+        <p class="theme-note">炒め物、焼きナス、煮びたし、揚げ物など幅広く使いやすい品種です。</p>
+        <p>特に油との相性がよく、炒めると果肉がうまみを含み、やわらかな食感になります。皮がやわらかいので、皮ごと調理しても食べやすく、色合いも料理に映えます。</p>
+      </section>
+
+      <section class="section">
+        <h2>種からつないだ固定種</h2>
+        <p>このピントンロングは、種から苗を育て、畑で栽培している固定種のナスです。</p>
+        <p>固定種は、同じ品種として受け継がれてきた性質を持ち、種を通して次の世代へつないでいけるのが特徴です。</p>
+        <p class="soil-note">日本では一般流通で見かける機会はまだ少なく、家庭菜園や直売所で出会える少し珍しいナスです。</p>
+        <p>台湾の暑さの中で育ってきた長ナスらしく、夏の畑で勢いよく実をつける姿も印象的。</p>
+      </section>
+
+      <p class="page-label">3 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年9月号 4枚目">
+      <header class="masthead">
+        <p class="eyebrow">開墾からはじまる野食育</p>
+        <h1>畝も知らずに、土を見ていた頃</h1>
+        <p class="lead">第4回「畝も知らずに、土を見ていた頃」</p>
+        <p class="intro">荒れ地から直売所へ、紡ぐ生きた知恵の記憶。</p>
+      </header>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          畝の場所を作り始めた開墾途中の畑。<br>
+          小屋と道具、ようやくい行きかいしながらなり始めた頃。<br>
+          時間を作っては訪れて、その度にオーマイ釈迦（ゴット）な自分。
+        </figcaption>
+        <img src="../assets/images/2026-09/yashokuiku-04-une-yugure-a.JPG" alt="畝が見えはじめた開墾途中の畑。小屋と道具、人が写っている記録写真">
+      </figure>
+
+      <section class="section">
+        <h2>畑になりかけの場所</h2>
+        <p>開墾が少し進んで、ようやく畝（うね）にしたい場所を作りはじめた頃の写真です。</p>
+        <p>こうして見ると、まだ何メートル四方も決めてもおらず</p>
+        <p>わかってもいなくて、土と葦をただ掘り起こして何となく区画を作って行った。</p>
+        <p>小屋もあるけど、秘密基地みたいなもんですね。</p>
+        <p>だって本人がどうやっていったらいいか、わかってもいなかった頃ですから（笑</p>
+        <p>遠くには葦（ヨシ）も見えてるナ。</p>
+        <p class="soil-note">それなのに、写真の中のオラは、なんだかちょっと余裕がある顔をしているだナ。</p>
+        <p>今なら笑えるけど、この頃はこの頃で本気。まだ何も栽培もしていもないのに、もう何かが始まった気がしていた。</p>
+      </section>
+
+      <section class="section">
+        <h2>食べる前に始まっていた</h2>
+        <p>食べることは、種をまいた日から始まったわけではなかったという、たまたまのオラの体験談。</p>
+        <p>野菜を育てる前に、土を見てきて、草を見て、水の流れを見てきて、「ここで本当にできるんか？」と考えながらの時間に追われてきた。</p>
+        <p class="theme-note">オラにとっての野食育は、たぶんそこから始まっています。</p>
+      </section>
+
+      <p class="page-label">4 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年9月号 5枚目">
+      <section class="section">
+        <h2>教える前に、体が覚える事</h2>
+        <p>食育というと、栄養の話だとか、食べ物を大切にしましょうという話になりがちです。もちろん、それも大事です。</p>
+        <p>でも、畑に立っていると、言葉になる前に体が覚えることがある。</p>
+        <p>土は、乾いている日と湿っている日で重さが違う。草は、抜きやすい草と、なかなか抜けない草があったり。水は、まっすぐ流れてほしいところには流れず、勝手なところへ行く。</p>
+        <p>そういうことも、ただ知識として知るならば、昨今SNSなんかでは盛んですね。</p>
+        <p>だけど、実際に手を動かしながら「ああ、そういうことか」と感じ知るのが、腑に落ちるって事だと思う。</p>
+        <p>生意気な意見かもしれませんけど</p>
+        <p class="river-note">きれいに整った体験じゃなくていい。泥がついて、少し疲れて、でも帰る時にはちょっと顔が明るくなる。</p>
+        <p>そんな感じが良いんじゃないだろーか？</p>
+      </section>
+
+      <p class="page-label">5 / 5</p>
+    </article>
+  </main>
+</body>
+</html>
