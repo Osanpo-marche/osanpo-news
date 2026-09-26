@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年10月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff2d8;
+      --ink: #2d2922;
+      --muted: #746b5c;
+      --line: #d8c5a2;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e4d8;
+      --soil: #6f5138;
+      --soil-soft: #f0e6da;
+      --sky: #446f86;
+      --sky-soft: #e5eff3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8deca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 840px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1160px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      color: var(--leaf);
+      font-size: 40px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--leaf);
+      font-size: 25px;
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    a {
+      color: var(--leaf);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child { border-bottom: 0; }
+
+    .theme-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .soil-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--soil-soft);
+      border-left: 5px solid var(--soil);
+      color: #4a3526;
+      font-weight: 700;
+    }
+
+    .sky-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--sky-soft);
+      border-left: 5px solid var(--sky);
+      color: #314957;
+      font-weight: 700;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      object-position: center 55%;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .pickup-panel {
+      margin: 24px 0;
+      padding: 34px 30px;
+      min-height: 360px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(111, 81, 56, 0.24), rgba(73, 111, 69, 0.12)),
+        repeating-linear-gradient(0deg, rgba(45, 41, 34, 0.04) 0 1px, transparent 1px 18px),
+        var(--paper-strong);
+    }
+
+    .pickup-panel .word {
+      color: var(--soil);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .pickup-panel .catch {
+      color: var(--leaf);
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .pickup-panel .sub {
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pickup-photo {
+      position: relative;
+      min-height: 430px;
+      background: var(--soil);
+    }
+
+    .pickup-photo img {
+      height: 430px;
+      max-height: none;
+      filter: saturate(0.88) contrast(1.04);
+      object-position: center top;
+    }
+
+    .pickup-photo::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(20, 24, 17, 0.08), rgba(20, 24, 17, 0.46));
+      pointer-events: none;
+    }
+
+    .pickup-copy {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 78px;
+      z-index: 1;
+      color: #fffaf0;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+    }
+
+    .pickup-copy .word {
+      margin-bottom: 6px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .pickup-copy .catch {
+      margin-bottom: 8px;
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .pickup-copy .sub {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .pickup-photo .caption {
+      position: relative;
+      z-index: 1;
+      background: var(--paper-strong);
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { padding: 12px; }
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+      h1 { font-size: 30px; }
+      h2 { font-size: 22px; }
+      p, .theme-note, .soil-note, .sky-note { font-size: 16px; }
+      .lead { font-size: 18px; }
+      .pickup-panel { min-height: 300px; padding: 28px 22px; }
+      .pickup-panel .catch { font-size: 29px; }
+      .pickup-photo,
+      .pickup-photo img { height: 350px; min-height: 350px; }
+      .pickup-copy { bottom: 92px; }
+      .pickup-copy .catch { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年10月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年10月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">天候が値札を変える時代「クライメートフレーション」</p>
+      </header>
+
+      <figure class="photo-block pickup-photo">
+        <img src="../assets/images/2026-10/pickup.jpg" alt="長雨で水が残った畑と、奥に見えるハウス">
+        <div class="pickup-copy">
+          <p class="word">クライメートフレーション</p>
+          <p class="catch">今まで通りはズレていくか？</p>
+          <p class="sub">「野菜が高い」の向こうと、昨今の空模様...</p>
+        </div>
+        <figcaption class="caption">長雨で畑に入れず、撮りたい写真も予定通りには撮れませんでした。こういう小さなズレも、畑では先に始まっています。</figcaption>
+      </figure>
+
+      <section class="section">
+        <h2>おさんぽ便り</h2>
+        <p>8月号では「フードマイレージ」の話をしました。食べ物は、どこから来るのか。</p>
+        <p>9月号では「旬レス」の話をしました。食べ物はいつ採れるのかでした。</p>
+        <p>そして今月は、もう一歩これからの畑事情を探ってみたいと思います。</p>
+        <p class="theme-note">食べ物は、これからも今まで通り、予定通りに採れるのだろうか？</p>
+        <p>そんな話です。</p>
+      </section>
+
+      <section class="section">
+        <h2>去年の大根</h2>
+        <p>昨年、8月中に大根を3回蒔き直した。</p>
+        <p>発芽まではする。</p>
+        <p>でも、その後の暑さに耐えられず、消えてしまう...</p>
+        <p>ネーさんの畑でも、同じように何度も蒔き直したと聞いていたが、結局は例年より時期を遅らせないと育ちませんでした。</p>
+        <p class="soil-note">「もう一回だけ蒔いてみるか」</p>
+        <p>そんなことを何度か繰り返して、オラ的に分かってきたかもな事。</p>
+        <p>少なくともオラの畑では、今までと同じ時期に蒔けばよい、とは言い切れなくなってきた。</p>
+        <p>そして、2026年、今年の9月は、例年にない長雨でした。</p>
+        <p>畑には、ほとんど入れず、日照不足で育ちも悪い。</p>
+        <p>暑さで蒔き直したと思ったら、今度は又雨で作業が進まない。</p>
+        <p>ようやく発芽したと思ったら、虫の餌食...</p>
+        <p>畑は、ひとつ予定がズレると、その後ろの予定まで少しずつズレていきます。</p>
+      </section>
+
+      <p class="page-label">1 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年10月号 2枚目">
+      <section class="section">
+        <h2>天候が値札に届くまで</h2>
+        <p>これは、ただ大根が失敗したという話だけではありません。</p>
+        <p>猛暑、干ばつ、大雨などの気象条件が農作物の生育に影響し、その結果として食料価格の上昇につながる現象を<strong>「クライメートフレーション」</strong>と呼ぶことがあります。</p>
+        <p>日本語にするなら、「気候による物価上昇」という感じでしょうか。</p>
+        <p>難しい言葉ですが、要するに、天候の変化が畑に影響し、それが少し遅れて値札にも出てくるという話です。</p>
+        <p>値札だけ見ていると、なかなか見えにくい話でもあります。</p>
+        <p>もちろん、大根を蒔き直したことそのものが、すぐにクライメートフレーションというわけではありません。</p>
+        <p>野菜の値段は、天候だけで決まるものでもありません。</p>
+        <p class="sky-note">輸送費、肥料、燃料、人件費、作る人の数、売り場の都合、需要と供給。いろいろなものが重なって、ようやく値札に表れる。</p>
+      </section>
+
+      <section class="section">
+        <h2>既に畑で始まっている予兆</h2>
+        <p class="theme-note">発芽しても育たない。<br>蒔き直す。<br>種も手間も時間も余計にかかる。<br>播種の時期が後ろや前にずれる。<br>結果収穫の時期もずれる。</p>
+        <p>でも、同じようなことが広い地域で同時に起きれば、供給にも響いてきます。そして、やがて価格にも表れてくることになるでしょう。</p>
+      </section>
+
+      <section class="section">
+        <h2>値札と価値</h2>
+        <p>ネ～さんと話をしたり、聞いたりしていると、「大根が高い」「キャベツが高い」「今年は野菜が高い」とか、そういう話を聞きます。</p>
+        <p>「だから農家さんは大変ね！」オラも本当にそう思います。</p>
+        <p>でも、畑に立っていると、その値段のずっと手前にある事が見えてきます。</p>
+      </section>
+
+      <p class="page-label">2 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年10月号 3枚目">
+      <section class="section">
+        <h2>環境変化による価格</h2>
+        <p>発芽した小さな芽が、暑さや長雨で消えていく。</p>
+        <p>もう一度、土をならしてもう一度、種を蒔く。</p>
+        <p>今度こそ育つか、毎朝見に行く。</p>
+        <p>おさんぽマルシェは自然に則った露地栽培ですが</p>
+        <p>露地の旬とは違う時期に安定して出荷しようとすれば、温度管理など別のコストも必要になります。</p>
+        <p>たとえば寒い時期のハウス栽培では、暖房に使う燃料費もかかります。</p>
+        <p class="soil-note">値札が上がった時に、突然何かが起こったわけではない。</p>
+        <p>実はその何か月も前から、畑では人間が天気に合わせて試行錯誤しています。</p>
+        <p class="theme-note">野菜の値段は、畑では先に始まっています。</p>
+      </section>
+
+      <section class="section">
+        <h2>今まで通りがズレていく</h2>
+        <p>農には、昔から「この時期に蒔く」「この頃に植える」「この季節に採れる」という目安がありました。</p>
+        <p>もちろん、その年の天気によって多少のズレはあると思います。</p>
+        <p>でも最近は、そのズレが「多少」では済まなくなってきているように感じます。</p>
+        <p>暑すぎる。雨が降らなさすぎる。降ったと思ったら、一気に降りすぎる。</p>
+        <p>畑の都合というより、空の都合に振り回される時間が増えてきました。</p>
+        <p>天気が変われば、畑が変わる。畑が変われば、やがて値段にも影響する。</p>
+        <p class="soil-note">オラの力不足なのかもしれませんが、<br>「いつでも同じように野菜が採れる」という安心は、<br>これから少し疑って見た方がいいかもしれません。</p>
+      </section>
+
+      <section class="section">
+        <h2>季節のお野菜</h2>
+        <h3>大根</h3>
+        <p>大根は、冬の食卓に欠かせない野菜です。おでん、煮物、大根おろし、漬物。</p>
+        <p>寒さに当たる時期の大根は、甘みを感じやすくなることがあります。</p>
+        <p>でも、その冬の大根は、冬になってから急に始まるわけではありません。</p>
+        <p class="sky-note">まだ暑さの残る頃に種を蒔き、発芽を待ち、虫や暑さや雨を見ながら育てていきます。</p>
+        <figure class="photo-block">
+          <img src="../assets/images/2026-10/daikon.jpg" alt="虫に葉を食べられた畑の大根">
+          <figcaption class="caption">虫に食われてしまった大根。冬の一本になる前に、畑ではこういう出来事も起きています。</figcaption>
+        </figure>
+        <p>冬に食べる一本の大根の向こうには、夏の終わりから秋にかけての空模様があります。</p>
+      </section>
+
+      <p class="page-label">3 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年10月号 4枚目">
+      <header class="masthead">
+        <p class="eyebrow">開墾からはじまる野食育</p>
+        <h1>予定通りにいかない畑で、何を持ち帰ったか？</h1>
+        <p class="lead">第5回　開墾途中で残った「なぜ？」</p>
+      </header>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          開墾途中の畑。土の区画、道具置き場、人の姿。予定通りにいかない場所で、少しずつ畑になっていく頃。
+        </figcaption>
+        <img src="../assets/images/2026-10/yashokuiku-04-une-yugure-c.JPG" alt="開墾途中の畑。土を盛った区画と小屋、人の姿が写っている">
+      </figure>
+
+      <section class="section">
+        <h2>開墾地では簡単にいかない</h2>
+        <p>畑を始める前は、種を蒔けば野菜は育つものだと思っていたオラ。</p>
+        <p>もちろん、条件が良い場所や、すでに整えられたシェア農園なら話は別です。</p>
+        <p>でも、オラんとこみたいな田んぼからの開墾地では、そんな簡単にはいきませんでした。</p>
+        <p class="soil-note">土壌を知らない。土が合わない。水が溢れる。水没する。夏場は水が足りない。草ボーボージャングルに負ける。虫が野菜を食べ放題。</p>
+        <p>そして何より、天気はオラのスケジュール通りには来てくれません。</p>
+      </section>
+
+      <section class="section">
+        <h2>自然の側へ合わせる</h2>
+        <p>畑で実感した一番大きなことは、予定通りにいかないものと付き合うことでした。</p>
+        <p>そして、うまくいかなかった時に、すぐ答えが出るわけでもありませんでした。</p>
+        <p>なんせ開墾当初は、うまくいく以前の問題が山積みです。</p>
+        <p>ちょっとずつ改善しては、大きくぶち壊される...その繰り返し...</p>
+        <p>今回の大根の話も、まさにそうかもしれません。</p>
+        <p>時期をずらす。場所を変える。去年の記憶を引っ張り出す。ジジババの経験を聞く。</p>
+        <p>そして自分で決断する事。</p>
+        <p class="theme-note">そうやって、人間の予定を少しずつ自然の側へ合わせていくしかありませんでした。</p>
+      </section>
+
+      <p class="page-label">4 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年10月号 5枚目">
+      <section class="section">
+        <h2>何を持ち帰ったか？</h2>
+        <p>その繰り返しの中、ただ「失敗した」で終わらないものが残っていきます。</p>
+        <p>オラが野食育で大事にしたいのは、ここです。</p>
+        <p class="theme-note">体験とは、何かをやったことだけではなく、そこから次の問いが生まれること。</p>
+        <p>農に触れる入口は、人それぞれです。</p>
+        <p>直売所で野菜を買う。畑に来て手を動かす。収穫体験のように、採ることを楽しむ。</p>
+        <p>どれも、農に触れる大事な入口です。</p>
+      </section>
+
+      <section class="section">
+        <h2>「なぜ？」を持ち帰る</h2>
+        <p>買った野菜を食べながら、「これはなぜ今の時期なんだろう」と思うこともあるだろうし。</p>
+        <p>草を刈りながら、「なぜこんなに草が伸びるんだろう」と思うこともある。</p>
+        <p>収穫しながら、「ここまで育つまでに、どれだけ手がかかったんだろう」と思うこともあるかもしれません。</p>
+        <p class="soil-note">どんな入口からでも、そこでひとつ「なぜ？」が残るかもしれない。</p>
+        <p>野食育として本当に大事にしたいのは、その「なぜ？」です。</p>
+        <p>そんな問いまで持ち帰れたら、普段の買い物や食事の見え方も、少し変わります。</p>
+        <p>畑から持ち帰るのは、野菜だけじゃなくていい。</p>
+        <p>ひとつの「なぜ？」を持ち帰ってもらえたら、その体験は、きっとそこで終わらない。</p>
+        <p>オラにとっての野食育は、たぶん、そういうものです。</p>
+      </section>
+
+      <section class="section">
+        <h2>お知らせ&お願い</h2>
+        <p class="sky-note">毎週日曜日、朝7時ごろから直売所を開いています。</p>
+        <p>雨天の場合は中止です。今月もよろしくお願いいたします。</p>
+        <p>場所が少しわかりづらい直売所なので、Google Map に口コミを書いてもらえると助かります。</p>
+        <p>気が向いたらで大丈夫です。</p>
+        <p><a href="https://g.page/r/CTZY3haPk24QEBM/review">Google Map に口コミを書く</a></p>
+      </section>
+
+      <section class="section">
+        <h2>参考・ことば</h2>
+        <p>農産物や食料価格の上昇が、物価全体を押し上げる現象は「アグリフレーション」と呼ばれることがあります。</p>
+        <p>異常気象だけでなく、需給、エネルギー価格、肥料、輸送費なども関係します。</p>
+        <p>参考リンク: <a href="https://www.jircas.go.jp/ja/program/proc/blog/20240430">国際農林水産業研究センター「気候変動のインフレ圧力」</a></p>
+      </section>
+
+      <p class="page-label">5 / 5</p>
+    </article>
+  </main>
+</body>
+</html>
