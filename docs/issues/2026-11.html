@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おさんぽマルシェ新聞 2026年11月号</title>
+  <style>
+    :root {
+      --paper: #fffaf0;
+      --paper-strong: #fff2d8;
+      --ink: #2d2922;
+      --muted: #746b5c;
+      --line: #d8c5a2;
+      --leaf: #496f45;
+      --leaf-soft: #edf4e8;
+      --accent: #b35f3d;
+      --accent-soft: #f8e4d8;
+      --soil: #6f5138;
+      --soil-soft: #f0e6da;
+      --sky: #446f86;
+      --sky-soft: #e5eff3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #e8deca;
+      color: var(--ink);
+      font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      width: min(100%, 840px);
+      margin: 0 auto;
+      padding: 28px 16px;
+    }
+
+    .sheet {
+      min-height: 1160px;
+      margin: 0 auto 28px;
+      padding: 46px 48px 42px;
+      background:
+        linear-gradient(90deg, rgba(73, 111, 69, 0.09) 0 8px, transparent 8px),
+        var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(62, 49, 31, 0.16);
+    }
+
+    .masthead {
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--leaf);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 14px;
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(179, 95, 61, 0.25);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      color: var(--leaf);
+      font-size: 40px;
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+      color: var(--leaf);
+      font-size: 25px;
+    }
+
+    h2::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      color: var(--accent);
+      font-size: 20px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .lead {
+      margin-top: 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .section:last-child { border-bottom: 0; }
+
+    .theme-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--leaf-soft);
+      border-left: 5px solid var(--leaf);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .soil-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--soil-soft);
+      border-left: 5px solid var(--soil);
+      color: #4a3526;
+      font-weight: 700;
+    }
+
+    .sky-note {
+      margin: 16px 0;
+      padding: 16px 18px;
+      background: var(--sky-soft);
+      border-left: 5px solid var(--sky);
+      color: #314957;
+      font-weight: 700;
+    }
+
+    .photo-block {
+      margin: 24px 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--paper-strong);
+    }
+
+    .photo-block img {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      object-fit: cover;
+      object-position: center 55%;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 10px 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .photo-title {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .topic-panel {
+      min-height: 430px;
+      display: grid;
+      align-content: end;
+      padding: 28px;
+      background:
+        linear-gradient(180deg, rgba(45, 41, 34, 0.04), rgba(45, 41, 34, 0.22)),
+        linear-gradient(135deg, rgba(73, 111, 69, 0.20), rgba(179, 95, 61, 0.16)),
+        repeating-linear-gradient(0deg, rgba(45, 41, 34, 0.05) 0 1px, transparent 1px 18px),
+        var(--paper-strong);
+    }
+
+    .topic-panel .word {
+      width: fit-content;
+      margin: 0 0 10px;
+      padding: 5px 10px;
+      background: rgba(255, 250, 240, 0.86);
+      color: var(--soil);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .topic-panel .catch {
+      max-width: 520px;
+      margin: 0;
+      color: var(--leaf);
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.35;
+      text-shadow: 0 1px 0 rgba(255, 250, 240, 0.75);
+    }
+
+    .topic-panel .sub {
+      max-width: 560px;
+      margin: 10px 0 0;
+      color: var(--soil);
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .photo-slot {
+      margin: 22px 0;
+      padding: 18px;
+      min-height: 210px;
+      display: grid;
+      align-content: center;
+      gap: 8px;
+      text-align: center;
+      border: 1px dashed #ad9b83;
+      background:
+        linear-gradient(135deg, rgba(73, 111, 69, 0.08), rgba(179, 95, 61, 0.08)),
+        var(--paper-strong);
+      color: var(--muted);
+    }
+
+    .photo-slot strong {
+      color: var(--leaf);
+      font-size: 16px;
+    }
+
+    .photo-slot span {
+      font-size: 14px;
+    }
+
+    .action-button {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      margin: 18px 0 4px;
+      padding: 12px 18px;
+      background: var(--leaf);
+      color: #fff;
+      border: 1px solid rgba(45, 41, 34, 0.14);
+      border-radius: 6px;
+      box-shadow: 0 6px 14px rgba(45, 41, 34, 0.14);
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.45;
+      text-decoration: none;
+    }
+
+    .action-button:hover {
+      background: #3f613c;
+    }
+
+    .page-label {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { padding: 12px; }
+      .sheet {
+        min-height: auto;
+        padding: 30px 24px;
+      }
+      h1 { font-size: 31px; }
+      h2 { font-size: 22px; }
+      p, .theme-note, .soil-note, .sky-note { font-size: 16px; }
+      .lead { font-size: 18px; }
+      .topic-panel {
+        min-height: 330px;
+        padding: 20px;
+      }
+      .topic-panel .catch { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年11月号 1枚目">
+      <header class="masthead">
+        <p class="eyebrow">2026年11月号</p>
+        <h1>おさんぽマルシェ新聞</h1>
+        <p class="lead">野菜を見る目も、共に育つ？</p>
+      </header>
+
+      <figure class="photo-block pickup-photo">
+        <img src="../assets/images/2026-11/pickup.jpg" alt="直売所に並ぶ、形も大きさもさまざまな朝採り野菜">
+        <figcaption class="caption">
+          <p class="photo-title">今月のピックアップ写真</p>
+          直売所に並ぶふぞろいな野菜。形も大きさも違う野菜を、どう見るかが今月の入口。
+        </figcaption>
+      </figure>
+
+      <section class="section">
+        <h2>おさんぽ便り</h2>
+        <p>畑から直売所をやるようになって、最近では畑を手伝ってみたいなんていう人もあらわれるようになってきた昨今です。</p>
+        <p>そうなると今まで一人でやって来た分、気づきもでてきます菜。</p>
+        <p>オラ自身、お手伝いした時は使った道具を元の場所に戻せてたっけ？<br>
+        自分の都合で動いてなかったか？.. 手が空いた時には周りを見渡せる余裕なんてあっただろうか？　などなど...</p>
+        <p>どれも、慣れたら特別むずかしいことではないですけど、最初から自然にできるわけでもありません。</p>
+        <p>勿論、覚えるには教えて頂く事も大事。ですがオラは昭和世代なので、こういう暗黙の「ルール」やら、自ら気づく素養を「モラル」だと思っていたのが普通でした。</p>
+        <p>ただ最近、少し違う言葉が浮かぶようになりました。</p>
+        <p class="theme-note">それが「ならわし」です。</p>
+        <p>「習わし（ならわし／慣わし）」とは、<strong>昔からその社会や地域、家庭などで決まって行われてきたしきたり、習慣、風習のことだそうです</strong>。</p>
+      </section>
+
+      <p class="page-label">1 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年11月号 2枚目">
+      <section class="section">
+        <h2>ルールではなく、ならわし</h2>
+        <p>オラは、ルールとは先に決まりがあって人が合わせるもので、ならわしは、暮らしや関係の積み重ねから生まれてくるものに見えてきています。</p>
+        <p class="theme-note">暮らしや関係が先にあって、その積み重ねから、「この場ではこうするものだ」という形が、あとから生まれてくる。</p>
+        <p>畑では、こんな違いがよく見えます。</p>
+        <p>毎回同じではありませんし、天気も違う。土の状態も違う。作物の育ち方も違う。人の体調も違います。</p>
+        <p>だから、決まりを覚えるだけでは回りません。その場を見て、今はどうしたらよいかを感じる。その加減を覚える風習が、ならわしと呼ばれるものに近いのかなと思いました。</p>
+        <figure class="photo-block">
+          <img src="../assets/images/2026-11/dougu.jpg" alt="畑の道具が元の場所に立てかけられている様子">
+          <figcaption class="caption">
+            <p class="photo-title">道具の置き場所にも、ならわしがある</p>
+            使った道具を元の場所に戻す。そんな小さなことも、畑では次の人の動きにつながっています。
+          </figcaption>
+        </figure>
+        <p>人は最初から、ならわしを知っているわけではありません。<br>
+        また、最近のネット社会のどこかで聞きかじって来たような知識も、「ならわし」文化にはあまり通用しません。</p>
+        <p>一緒にやる。真似る。注意される。失敗する。またやってみる。<br>
+        そうやって少しずつ加減を覚える。</p>
+        <p>いつのまにか体に身についていくものだと思います。</p>
+        <p>10月号では、畑での体験とは、ただ作業をしたことではなく、そこからおのおの問いを持ち帰ることが次に繋がるのではないか？と、オラの体験を話しました。</p>
+        <p>けれども昨今、その途中の学びが少し薄くなっているようにも感じます。</p>
+        <p>仕事でも、家庭でも、近所でも、地域でも、世代の違う人と一緒に何かをする機会が、以前より少なくなっているからではないでしょうか？</p>
+        <p>そうなると、「書いてないからやっていい」「禁止されていないから問題ない」「自分の担当ではない」という考え方になりやすいです。</p>
+        <p>マニュアルも大事なんですけど、自然を相手にすると、それだけで回るような完璧なマニュアルがありません。</p>
+        <p>畑には、ルールになる前の学び方があるように思っています。</p>
+        <p>そして、そんな学び方は、野菜を見る目にもつながっているように思います。</p>
+      </section>
+
+      <p class="page-label">2 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年11月号 3枚目">
+      <section class="section">
+        <h2>素材を見る目</h2>
+        <p>少し前に、宮大工さんの話をYouTubeで観ました。</p>
+        <p>伊勢神宮のような建物は、形がとてもシンプルで渋いだ！</p>
+        <p>だからこそ、素材選びが難しいのだって話でした。</p>
+        <figure class="photo-block">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ise-Shrine_Itagaki-minami-gomon.jpg?width=1280" alt="伊勢神宮内宮入口の鳥居と石段">
+          <figcaption class="caption">
+            <p class="photo-title">参考写真：伊勢神宮 内宮</p>
+            シンプルな形だからこそ、木や構造の見え方が際立つ建築。写真：MaedaAkihiko / Wikimedia Commons / CC0
+          </figcaption>
+        </figure>
+        <p>複雑な装飾で見せるのではなく、シンプルだからこそ柱や屋根、全体の姿そのもので成立させなければならないとの事。</p>
+        <p>そこに使われる木も、「<strong>木曽ヒノキなら何でもよい</strong>」という話ではありませんでした。</p>
+        <p>同じ種類の木でも、一本一本は性質が違う。一本の木の中でも、どの面を見せるかで印象が変わる。</p>
+        <p>見た目を優先するのか？ 力のかかり方を考えるのか。その木を建物のどこへ使うのか。</p>
+        <p><strong>宮大工は、木の名前ではなく、目の前の木そのものを見ていただ。</strong></p>
+        <p>この話を聞いたとき、野菜作りにも素材選びにも似ていると思いました。</p>
+        <p class="soil-note">良い素材を使うことと、素材を見ることは別の技術。</p>
+        <p>農薬を使わず育てたから良い野菜。固定種だから良い野菜。<br>
+        世の中にはそんなレッテルはいくらでも見つかります。</p>
+        <p>実際、手間がかかる分そう言いたくなることもありますが、でも実際の畑はそんなに単純でもありません。</p>
+        <p>同じ品種をまいても、一本一本違う。同じ畑でも、土の状態、日当たり、水分、気温、虫、病気、その年の天候で育ち方は変わります。</p>
+        <p>固定種なら、なおさら形も大きさもそろわないことがあります。</p>
+        <p>だから大事なのは、「農薬を使わず育てた」というラベルだけではなく、目の前の野菜をどう見るか？なんだと思います。</p>
+        <p class="theme-note">この「見る目」の話は、そのまま野食育にもつながっていきます。</p>
+      </section>
+
+      <p class="page-label">3 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年11月号 4枚目">
+      <header class="masthead">
+        <p class="eyebrow">開墾からはじまる野食育</p>
+        <h1>野菜を見る目も、共に育つ？</h1>
+        <p class="lead">第6回　野食育から共育へ</p>
+        <p class="intro">荒れ地から直売所へ、紡ぐ生きた知恵の記憶。</p>
+      </header>
+
+      <figure class="photo-block">
+        <figcaption class="caption">
+          <p class="photo-title">野食育の記録写真</p>
+          初めて畝をひとつ作って、ズッキーニを植えた頃。ようやく辿り着いた実感で、めちゃくちゃ感動したのを覚えています。
+        </figcaption>
+        <img src="../assets/images/2026-11/yashokuiku-05.JPG" alt="初めてできた畝にズッキーニを植え、ジョウロを持って水をやっている記録写真">
+      </figure>
+
+      <section class="section">
+        <h2>買う人にも育つ、野菜を見る目</h2>
+        <p>そしてこれは、作る側の話だけではないと思っています。</p>
+        <p>おさんぽマルシェで野菜を買ってくれる人たちも、いつのまにか少しずつ野菜観る芽が育っていく。</p>
+        <p>最初は、珍しいか。形がきれいか。虫食いがないか。大きいか小さいか。値段はいくらか。そういう見方だったとしても、何度も野菜を手に取り、話を聞き、食べているうちに、少しずつ見方が変わっていきます。</p>
+        <p>この葉のやわらかさなら、汁物に向きそうだ。少し曲がっているけれど、味には関係なさそうだ。今日はすぐ使うから、完璧な見た目でなくてもいい。この虫食いなら、外葉を取れば十分食べられるなど...</p>
+        <p>オラは調理が苦手なので（笑）語る資格はありませんが、そんな判断が買う人の中にも育っていく。</p>
+        <p>その目は、おさんぽマルシェの中だけで終わりません。</p>
+        <p>スーパーや八百屋で買い物をするときにも、値段や見た目だけではなく、重さ、香り、葉の張り、切り口、季節、その日に作りたい料理。そういうものを合わせて、自分で選ぶ力になっていく事でしょう。</p>
+        <figure class="photo-block">
+          <img src="../assets/images/2026-11/yuuki.jpg" alt="有機栽培の値札と野菜が並ぶ売り場">
+          <figcaption class="caption">
+            <p class="photo-title">野菜を選ぶ目</p>
+            値段、表示、形、鮮度。買い物の場でも、野菜を見る目は少しずつ育っていきます。
+          </figcaption>
+        </figure>
+        <p class="theme-note">野菜を見る目は、作る人だけのものではありません。買う人の中にも、少しずつ育っていくものです。</p>
+      </section>
+
+      <section class="section">
+        <h2>見る芽はどう育つのか？</h2>
+        <p>オラは、まず「元気」を判断できるのが大事なんだろうと思っています。</p>
+        <p>ただ大きいとか、形がきれいという意味ではありません。</p>
+        <p>その野菜が、その野菜らしく、よい状態で力を出している姿のことです。</p>
+        <p>おさんぽマルシェは、農薬を使わず育てた野菜が朝採れ30分以内に並びます。</p>
+        <p>この鮮度は直売所ならではで、高級な自然食屋さんでも、なかなか真似しにくいでしょう。</p>
+        <p>そんな、よい状態（元気）の野菜を見る。触る。食べる。</p>
+        <p>その経験があるからこそ、皆さんの上物を選ぶ目も舌も自然と育っていくと思っているオラ。</p>
+      </section>
+
+      <p class="page-label">4 / 5</p>
+    </article>
+
+    <article class="sheet" aria-label="おさんぽマルシェ新聞 2026年11月号 5枚目">
+      <section class="section">
+        <h2>まず、よいものに触れる事</h2>
+        <p>オラもネ～さん達世代から、昔は山に入って山菜やキノコ・木の実、しまいには紅葉？まで採ってきていた話を聞いて、さぞかし美味しい自然の恵みだなーって思うのですが...</p>
+        <p>山に登るのだって、頂上（道）を知らないと大変！</p>
+        <p>それと一緒で、何が良いのか？</p>
+        <p>野菜を見る目も、それに近いと思うだ。</p>
+        <figure class="photo-block">
+          <img src="../assets/images/2026-11/osanpo.jpg" alt="直売所に並ぶ色とりどりの元気な朝採り野菜">
+          <figcaption class="caption">
+            <p class="photo-title">元気な野菜を見る</p>
+            その野菜らしく、よい状態で力を出している姿。おさんぽマルシェで感じてもらいたい「上物」のひとつです。
+          </figcaption>
+        </figure>
+        <p>まず、よいものを一緒に見る。</p>
+        <p>世間では上物・高級品・オーガニックなど、カテゴライズはそれこそ沢山あるでしょうけど、これがよい状態だと分かるものを、まず目の前に置く。</p>
+        <p>そこから、それぞれの目で違いを覚えていく。</p>
+        <p>昨今、上から正解を押しつけられる（ネット情報）機会も増えてきましたが<br>
+        かといって、何も見せずに「自分で感じなさい」と言うことでもありません。</p>
+        <p>まず、一緒に見る。</p>
+        <p>よいものを隠してありがたがらせるのではなく、目の前に置いて、「これはいい状態だね」と共有する。</p>
+        <p>そこから、自分の目で選べるようになっていく。</p>
+        <p>おさんぽマルシェでやりたいことは、そういうことに近いのかもしれません。</p>
+      </section>
+
+      <section class="section">
+        <h2>野食育から共育へ</h2>
+        <figure class="photo-block">
+          <img src="../assets/images/2026-11/demo.jpg" alt="野食育から共育へつながる一枚">
+        </figure>
+        <p>野食育という言葉で、これまでいろいろ考えてきました。</p>
+        <p>10月号では、体験とは、ただ作業をしたことではなく、その作業から次の問いが生まれること？そんな話をしました。</p>
+        <p>今月号では、その続きとして体験を重ねることで、ふるまいや、野菜を見る目も育っていくことだと考えています。</p>
+        <p>そしてその目は、作る人だけでなく、買う人にも育っていく。</p>
+        <p>そう考えると、野食育とは</p>
+        <p class="sky-note">畑と野菜をあいだに置いて、作る人も買う人も一緒に見て、考えて、食べて、少しずつ見る目も育て合っていくこと。</p>
+        <p>それは「教育」ではなくて、「共育」だと思っています。</p>
+        <p>畑で安全な土壌を作る。元気な野菜が育つ。売る人も、買う人も育つ。</p>
+        <p>おさんぽマルシェで野菜を並べる意味は、きっとそこにあるのだと思います。</p>
+      </section>
+
+      <section class="section">
+        <h2>お知らせ&お願い</h2>
+        <p class="sky-note">LINEオープンchatへの参加お願い</p>
+        <p>おさんぽマルシェLINE公式アカウントは無料枠で運営しているため、1か月に配信できるメッセージ数が200通までとなっています。</p>
+        <p>現在、登録者さん44名なので、皆さんにお届けできるのは月4回程度。</p>
+        <p>そのため、今日の直売速報、畑の様子・裏側、入荷情報などは、LINEオープンチャット「直売速報！【配信専用】」からお届けしています。</p>
+        <p>小さな貧乏直売所のため、どうぞご理解いただけたらうれしいです。</p>
+        <p>参加方法はかんたん！</p>
+        <p>下のメニューにある「直売速報！【配信専用】」を押してください。</p>
+        <p>はじめて開くと、お名前を入れる画面が出ますので、お好きな名前（ニックネーム）を入れて「参加」を押してください。</p>
+        <p>これで、畑の様子や入荷情報が届くようになります。どうぞよろしくお願いします。</p>
+        <p><a class="action-button" href="https://line.me/ti/g2/r38uTxsxad3AyMmHIbxmrthPeGmOvFSXVGOaAQ?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default">直売速報！【配信専用】に参加する</a></p>
+        <p class="sky-note" style="margin-top: 32px;">毎週日曜日、朝7時ごろから直売所を開いています。</p>
+        <p>雨天の場合は中止です。今月もよろしくお願いいたします。</p>
+        <p>場所が少しわかりづらい直売所なので、Google Map に口コミを書いてもらえると助かります。</p>
+        <p>気が向いたらで大丈夫です。</p>
+        <p><a href="https://g.page/r/CTZY3haPk24QEBM/review">Google Map に口コミを書く</a></p>
+      </section>
+
+      <section class="section">
+        <h2>参考</h2>
+        <p>宮大工の話：<a href="https://www.youtube.com/watch?v=wW5JgrpSfEM">YouTube</a></p>
+        <p>伊勢神宮 内宮参考写真：<a href="https://commons.wikimedia.org/wiki/File:Ise-Shrine_Itagaki-minami-gomon.jpg">Wikimedia Commons「Ise-Shrine Itagaki-minami-gomon.jpg」</a>（MaedaAkihiko / CC0）</p>
+      </section>
+
+      <p class="page-label">5 / 5</p>
+    </article>
+  </main>
+</body>
+</html>
